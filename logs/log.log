@@ -1,18 +1,1 @@
-2019-06-10 15:35:38 ERROR RpcHandler:171 - server caught exception
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:748)
+2019-06-17 20:28:06 ERROR ServiceDiscovery:69 - KeeperErrorCode = ConnectionLoss for /registry/data0000000009

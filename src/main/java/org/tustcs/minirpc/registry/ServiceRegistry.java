@@ -29,6 +29,7 @@ public class ServiceRegistry {
             if (zk != null) {
                 //创建服务根节点
                 addRootNode(zk);
+                logger.info("conndata:" + data);
                 //创建新服务节点
                 createNode(zk, data);
             }
@@ -70,7 +71,7 @@ public class ServiceRegistry {
             String path = zk.create(Constant.ZK_DATA_PATH, bytes,
                     ZooDefs.Ids.OPEN_ACL_UNSAFE,
                     CreateMode.EPHEMERAL_SEQUENTIAL);
-            logger.debug("zookeeper node: ({} => {})", path, data);
+            logger.info("zookeeper node: ({} => {})", path, data);
         } catch (KeeperException | InterruptedException e) {
             logger.error(e.getMessage());
         }
